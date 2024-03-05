@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Formulário de pesquisa gratuito do Code Camp</h1>
+            <p>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+        </header>
+    </div>
+
+            <form action="teste.php" method="post">
+                <div class="form">
+                    <label for="inome">Nome</label> <br>
+                    <input type="text" class="texto" name="nome" id="inome" placeholder="  Digite seu nome" required> <br>
+                </div>
+
+                <div class="form">
+                    <label for="iemail">Email</label> <br>
+                    <input type="email" class="texto" name="email" id="iemail" placeholder="  Digite seu email" required> <br>
+                </div>
+
+                <div class="form">
+                    <label for="iidade">Idade(opcional)</label> <br>
+                    <input type="number" class="texto" name="idade" id="iidade" min="10"> <br>
+                </div>
+
+                <div class="form">
+                    <p>Qual opção melhor descreve sua função atual?</p>
+                    <label for="ifuncao">
+                    <select name="funcao" class="texto" id="ifuncao" required> 
+                        <option disabled selected value>Escolha uma opção</option>
+                        <option value="student">Estudante</option>
+                        <option value="job">Trabalho em tempo integral</option>
+                        <option value="learner">Aluno em tempo integral</option>
+                        <option value="preferNo">Prefere não dizer</option>
+                        <option value="other">Outro</option>
+                    </select>
+                    </label>
+                </div>
+
+                <div class="form">
+                    <p>Você recomendaria o freeCodeCamp a um amigo?</p>
+                    <input type="radio" name="radio" id="iradio"> <label for="iradio">Definitivamente</label> <br>
+                    <input type="radio" name="radio" id="iradio"> <label for="iradio">Talvez</label> <br>
+                    <input type="radio" name="radio" id="iradio"> <label for="iradio">Não tenho certeza</label> <br>
+                </div>
+
+                <div class="form">
+                    <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+                    <label for="iopcoes">
+                    <select name="opcoes" id="iopcoes" class="texto">
+                        <option disabled selected value>Escolha uma opção</option>
+                        <option>Comunidade</option>
+                        <option>Projetos</option>
+                        <option>Desafios</option>
+                        <option>Código aberto</option>
+                    </select>
+                    </label>
+                </div>
+
+                <div class="form">
+                    <p>O que você gostaria de ver melhorado? (Marque todas as opções aplicáveis)</p>
+                    <input type="checkbox" name="primeiro" id="ilista"> <label for="iprimeiro">Projetos Front-end</label> <br>
+                    <input type="checkbox" name="segundo" id="isegundo"> <label for="isegundo">Projetos Back-end</label> <br>
+                    <input type="checkbox" name="terceiro" id="isegundo"> <label for="iterceiro">Visualização de dados</label> <br>
+                    <input type="checkbox" name="quarto" id="isegundo"> <label for="iquarto">Desafios</label> <br>
+                    <input type="checkbox" name="quinto" id="isegundo"> <label for="iquinto">Comunidade de códigos abertos</label> <br>
+                    <input type="checkbox" name="sexto" id="isegundo"> <label for="isexto">Salas de ajuda do Gitter</label> <br>
+                    <input type="checkbox" name="setimo" id="isegundo"> <label for="isetimo">Vídeos</label> <br>
+                    <input type="checkbox" name="oitavo" id="isegundo"> <label for="ioitavo">Encontros na cidade</label> <br>
+                    <input type="checkbox" name="nono" id="isegundo"> <label for="inono">Wiki</label> <br>
+                    <input type="checkbox" name="decimo" id="isegundo"> <label for="idecimo">Forum</label> <br>
+                    <input type="checkbox" name="onze" id="isegundo"> <label for="ionze">Cursos adicionais</label> <br>
+                </div>
+
+                    <input type="submit" value="Enviar">
+
+                    </label>
+                </div>
+            </form>
+</body>
+</html>
